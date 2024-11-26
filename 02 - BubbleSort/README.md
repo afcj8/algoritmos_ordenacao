@@ -7,3 +7,11 @@ O BubbleSort é um algoritmo de ordenação simples que organiza uma lista compa
 - **Melhor caso (lista já ordenada):** $O(𝑛)$, quando implementado com uma verificação para evitar iterações desnecessárias.
 - **Pior caso (lista em ordem reversa):** $O(n^2)$, pois cada elemento deve ser comparado e trocado em todas as iterações.
 - **Caso médio:** $O(𝑛^2)$, devido ao número de comparações e trocas necessárias.
+
+## 2.2. Funcionamento
+
+1. Percorre a lista repetidamente.
+2. Compara pares consecutivos de elementos.
+3. Troca os elementos de lugar, se necessário.
+4. Após cada iteração, o maior elemento "flutua" para o final da lista.
+5. O processo é repetido para os elementos restantes até que não haja mais trocas.
