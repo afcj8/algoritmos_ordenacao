@@ -61,3 +61,5 @@ O BubbleSort é um algoritmo de ordenação simples que organiza uma lista compa
 **Lista:** [5, 8, 10, 20, 30, 50]
 
 **Resultado final:** [5, 8, 10, 20, 30, 50]
+
+O BubbleSort é fácil de entender e implementar, mas sua ineficiência em listas grandes o torna inadequado para aplicações práticas. É mais eficiente para listas pequenas ou já ordenadas, especialmente quando implementado com verificações para interromper o processo caso nenhuma troca seja necessária em uma iteração.
