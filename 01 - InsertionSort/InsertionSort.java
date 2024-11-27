@@ -16,7 +16,6 @@ public class InsertionSort {
         System.out.println("Executado em = " + (tempoFinal - tempoInicial) + " ms");
     }
 
-
     // Método: insertionSort
 
     public static void insertionSort(int[] arr) {
