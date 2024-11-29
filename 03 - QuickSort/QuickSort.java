@@ -3,7 +3,17 @@ public class QuickSort {
 
     }
 
-    // Método: QuickSort
+    // Método: quickSort
+
+    public static void quickSort(int[] arr, int inicio, int fim) {
+        if (inicio < fim) {
+            int posicaoPivo = separar(arr, inicio, fim);
+            quickSort(arr, inicio, posicaoPivo - 1);
+            quickSort(arr, posicaoPivo + 1, fim);
+        }
+    }
+
+    // Método: separar
 
     public static int separar(int[] arr, int inicio, int fim) {
         int pivo = arr[inicio];
