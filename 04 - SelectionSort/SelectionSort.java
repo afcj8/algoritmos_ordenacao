@@ -1,6 +1,19 @@
 public class SelectionSort {
     public static void main(String[] args) {
+        int quantidade = 1000;
+        int[] arr = new int[quantidade];
 
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = (int) (Math.random() * 1000);
+        }
+
+        long tempoInicial = System.currentTimeMillis();
+
+        selectionSort(arr);
+
+        long tempoFinal = System.currentTimeMillis();
+
+        System.out.println("Executado em = " + (tempoFinal - tempoInicial) + " ms");
     }
 
     // Método: selectionSort
