@@ -3,6 +3,29 @@ public class MergeSort {
         
     }
 
+    // Método: mergeSort
+
+    public static void mergeSort(int[] arr) {
+        if (arr.length < 2) {
+            return;
+        }
+
+        int meio = arr.length / 2;
+        int[] esquerda = new int[meio];
+        int[] direita = new int[arr.length - meio];
+
+        for (int i = 0; i < meio; i++) {
+            esquerda[i] = arr[i];
+        }
+
+        for (int i = meio; i < arr.length; i++) {
+            direita[i - meio] = arr[i];
+        }
+
+        mergeSort(esquerda);
+        mergeSort(direita);
+        merge(esquerda, direita, arr);
+    }
 
     // Método: merge
 
